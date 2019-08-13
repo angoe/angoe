@@ -27,6 +27,8 @@
     
     
     
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
     <link rel="stylesheet" href="/css/uno.css">
     <link rel="stylesheet" href="/css/highlight.css">
     <link rel="stylesheet" href="/css/archive.css">
@@ -63,6 +65,15 @@
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
 
+              
+                
+                <li class="navigation__item"><a href="/#blog" title class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title class>关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title class>归档</a></li>
               
 
             </ul>
@@ -148,22 +159,6 @@ classes that you can use:
 
   <section class="post-comments">
 
-<div id="container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: 'angoe', // 可选。默认为 location.href
-  owner: angoe,
-  repo: angoe.github.io,
-  oauth: {
-    client_id: b73df2e81baad7296482,
-    client_secret: 89c99b6e79ba97ae3568628dc90ecee18024ea73,
-  },
-})
-gitment.render('container')
-</script>
-    
 </section>
 
 
@@ -185,6 +180,17 @@ gitment.render('container')
     
 
     
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
     
     
     
