@@ -159,7 +159,21 @@ classes that you can use:
 
   <section class="post-comments">
 
-    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: 'angoe', // 可选。默认为 location.href
+  owner: 'angoe',
+  repo: 'https://angoe.github.io/#blog',
+  oauth: {
+    client_id: 'b73df2e81baad7296482',
+    client_secret: '89c99b6e79ba97ae3568628dc90ecee18024ea73',
+  },
+})
+gitment.render('container')
+</script>    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
     
 </section>
 
